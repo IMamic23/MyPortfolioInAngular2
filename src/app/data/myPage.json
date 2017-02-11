@@ -1,0 +1,48 @@
+{
+    "name": "Ivica",
+    "surname": "Mamić",
+    "knowledge": "Automation Tester | Developer | .NET, C#, Selenium, Ranorex, Web Design",
+    "education": "Network Engineer",
+    "location": "Zagreb, Croatia",
+    "email": "mamic.ivica@gmail.com",
+    "fbLink": "https://www.facebook.com/IMamic23",
+    "inLink": "https://www.linkedin.com/in/ivica-mamic-84246082",
+    "gPlusLink": "",
+    "aboutme": "&nbsp;&nbsp;In 2012 I graduated in engineering of computer networks and systems at the Technical University of Applied Sciences in Zagreb (TVZ).<br> I worked as an IT technician in Kvark to test computers and peripheral hardware, installation and configuration of Windows operating systems (Windows 2000., Windows XP ) and took account of the condition of components in service.<br> <br> &nbsp;&nbsp;As an agent for the customer support of B.net, I have experienced working withend users and technologies related to Internet access. For a few months I worked in a freelance position as an applications developer where I was developing simple apps with app builder, testing and publishing them to Google Play. From March 2013 to October 2014, I worked as technical support for Špica d.o.o. My duties included system installation, configuration and maintenance of systems for access control and time attendance. Also I worked on an internal application by managing and editing database and source code, as an assistant and independently in managing projects and administrating local domain in the company.<br> Since November 2014 to June 2016 I have been working at Ključ savjetovanje for AerData B.V., as Software QA and Automation Engineer working on development of test automation using Ranorex, SoapUI and other products. I managed blackbox, regression and post release testing on AerData applications, I wrote and updated test cases based on new development.<br> &nbsp;&nbsp; Since June 2016 I am working at AMPLEXOR Adriatic d.o.o. as Testing Specialist, working on development of test automation using Ranorex, Selenium, SoapUI and other products. I manage blackbox and post release testing on AMPLEXOR's applications, I write and update test cases based on new development and bug testing.<br><br> &nbsp;&nbsp;I consider myself a flexible and creative person, willing to work in teams and I like problem solving. I am a responsible and reliable person and entirely task dedicated.",
+    "experience": [{
+            "date": "May 2004 – July 2004",
+            "workingposition": "IT Technician - INFODATA d.o.o., Zagreb (Croatia) - internship",
+            "description": "<li> Assembling computers, receipt of equipment for service. </li><li> Installation and configuration of computers and smaller LANs with users, creating and connecting UTP cabling. </li><li>Maintenance and testing hardware (peripherals and network devices, workstations, laptops). </li>"
+        },
+        {
+            "date": "February 2007 – September 2007",
+            "workingposition": "IT Technician - Kvark d.o.o., Zagreb (Croatia)",
+            "description": "<li> Installation, configuration and testing of client and server operating systems and associated user and administrative applications. </li> <li> Working with service software and databases. </li><li> Diagnosing faults on computers and changing parts-receiving and issuing goods to service, supply of equipment and parts in coordination with external partners-contact with clients . </li>"
+        },
+		{
+			"date": "March 2010 – July 2010",
+            "workingposition": "IT Support - B.Net, Zagreb (Croatia) - Student job",
+            "description": "<li> Technical support in the LAN and WLAN. </li><li> Router and network configuration in windows. </li><li> Local and remote administration of workstations and servers (TightVNC / RDP). </li>"
+		},
+		{
+			"date": "October 2012 - February 2013",
+            "workingposition": "Android App Developer - McAllen, US – Freelance Job",
+            "description": "<li> Developing simple android apps with application builder. </li><li> Testing and publishing apps to Google Play. </li>"
+		},
+		{
+			"date": "March 2013 - October 2014",
+            "workingposition": "IT Support Professional - Spica Sustavi d.o.o., Zagreb (Croatia)",
+            "description": "<li>Support, installation and configuration of software for working hours and access.</li><li>MS SQL data manipulation, editing and scripting.</li><li>Developing and modifying of simple and medium complexity C# Windows Form applications.</li><li>Administration of the local Active Directory domain and network.</li><li>Installation and configuration of web applications.</li><li>Testing, troubleshooting and tuning of the software.</li><li>Work organization and monitoring of projects and work orders through MS CRM.</li><li>Image backup & restore with Acronis True Image software.</li>"
+		},
+		{
+			"date": "November 2014 - May 2016",
+            "workingposition": "Software QA Engineer - Ključ Savjetovanje (AerData B.V.), Zagreb (Croatia)",
+            "description": "<li>Blackbox, regression and release testing of AerData's STREAM and Dashboard products.</li><li>Writing test plans and updating test plans based on new development.</li><li>Testing automation investigation and implementation for AerData's STREAM product.</li><li>Working on Ranorex and SoapUI products testing Web applications,UI applications and API's.</li><li>C#, JavaScript coding and scripting to implement and improve testing automation.</li>"
+		},
+		{
+			"date": "May 2016 - present",
+            "workingposition": "Software Testing Specialist - AMPLEXOR Adriatic d.o.o., Zagreb (Croatia)",
+            "description": "<li>Test Automation in Ranorex, Selenium, webDriver.io, SoapUI, Runscope.</li><li>Testing of AMPLEXOR products.</li><li>Writing and updating test cases based on new development and bug fixes.</li><li>Introduction and further development of automated tests.</li><li>Work closely with developers.</li>"
+		}
+		]
+}

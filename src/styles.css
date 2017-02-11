@@ -1,0 +1,1306 @@
+/* Reset */
+
+.animate,
+.btn,
+.btn-border-o:before,
+.btn-border-o:after,
+.btn-border:before,
+.btn-border:after,
+.btn-border-rev-o:before,
+.btn-border-rev-o:after,
+.btn-border-rev:before,
+.btn-border-rev:after,
+.btn-fill-vert-o:before,
+.btn-fill-vert-o:after,
+.btn-fill-vert:before,
+.btn-fill-vert:after,
+.btn-fill-horz-o:before,
+.btn-fill-horz-o:after,
+.btn-fill-horz:before,
+.btn-fill-horz:after {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+/* The element you want to fix the position of */
+
+.fixed {
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    /* Do not set top / left! */
+}
+
+a:focus {
+    text-decoration: none !important;
+    color: darkorange !important;
+}
+
+:focus {
+    outline: none !important;
+}
+
+.active {
+    color: darkorange;
+}
+
+.header {
+    clear: both;
+    margin-top: -80px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.main {
+    margin-top: 80px;
+    height: 870px;
+    background-image: url(http://tech.youzan.com/content/images/2016/02/css3-code-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+i {
+    color: white;
+    font-size: 1.1em;
+    text-align: center;
+    margin: auto;
+}
+
+p {
+    color: white;
+    font-size: 1.2em;
+}
+
+blockquote::first-letter {
+    font-weight: bold;
+    font-size: 180%;
+}
+
+h3.aboutmetexttitle {
+    font-size: 1.5em !important;
+    text-align: left !important;
+    margin-left: 20px;
+}
+
+.show {
+    display: block;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Bree Serif', serif;
+}
+
+.logo {
+    position: absolute;
+    color: orangered;
+    opacity: 0.1;
+    transform: translateX(-200px);
+    transform: scale(0.1);
+    font-size: 3em;
+    margin: 5px 20px;
+    -webkit-filter: drop-shadow(2px -2px 3px rgba(0, 0, 0, 0.7));
+    /* Chrome, Safari, Opera */
+    filter: drop-shadow(2px -2px 3px rgba(0, 0, 0, 0.7));
+    animation-name: logoanimation;
+    animation-duration: 1.2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards;
+}
+
+
+/* The animation code */
+
+@keyframes logoanimation {
+    0% {
+        opacity: 0.1;
+        transform: translateX(-200px) scale(0.1) rotate(-90deg);
+    }
+    40% {
+        opacity: 0.5;
+        transform: translateX(-60px) scale(0.4) rotate(-45deg);
+    }
+    80% {
+        opacity: 0.85;
+        transform: translateX(10px) scale(1.3) rotate(10deg);
+    }
+    90% {
+        opacity: 0.85;
+        transform: translateX(-5px) scale(0.8) rotate(-5deg);
+    }
+    100% {
+        opacity: 0.9;
+        transform: translateX(0px) scale(1) rotate(0deg);
+    }
+}
+
+@media screen and (min-width:1100px) {
+    #container {
+        height: 100%;
+        width: 1100px;
+        margin: 0px auto;
+        background: rgba(0, 0, 0, 0.3);
+        /*Borders - (Optional)*/
+        border-left: 14px solid rgba(255, 255, 255, 0.7);
+        border-right: 4px solid rgba(255, 255, 255, 0.7);
+    }
+    #container2 {
+        height: 1300px;
+        width: 1100px;
+        margin: 0px auto;
+        background: rgba(0, 0, 0, 0.7);
+        /*Borders - (Optional)*/
+        border-left: 14px solid rgba(255, 255, 255, 0.7);
+        border-right: 4px solid rgba(255, 255, 255, 0.7);
+    }
+    .containerheight {
+        height: 700px !important;
+    }
+}
+
+nav {
+    float: right;
+    padding-top: 26px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+nav ul li a {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.4em;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    font-size: 1.4em;
+    text-decoration: none;
+    color: white;
+}
+
+span {
+    width: 100%;
+}
+
+.titleborder {
+    display: inline;
+    padding: 0.2em 0.5em;
+    border: white solid 10px;
+}
+
+.title {
+    padding-top: 330px;
+    font-size: 5em;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    text-align: center;
+    clear: both;
+    text-shadow: 0.1em -0.1em 0.1em black;
+}
+
+.undertitle {
+    font-size: 1.8em;
+    /* opacity: 0;  
+    transform-origin: bottom left;
+    transform: rotate(-90deg) scale(0.1) translate(-500px, 100px) rotateX(90deg);
+    transition: all 300ms cubic-bezier(0, 0.71, 0.45, 1.65); */
+}
+
+.is-active {
+    opacity: 0.9 !important;
+    transform: rotate(0deg) scale(1)!important;
+}
+
+.menu-trigger {
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    .mypic {
+        width: 60% !important;
+    }
+    .profiletext {
+        padding: 40px 40px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .main {
+        height: 900px;
+    }
+    .findmeon {
+        padding-top: 0px !important;
+    }
+    .space {
+        margin-top: 0px !important;
+    }
+    .bcgcolor {
+        background-color: rgba(0, 0, 0, 0.77) !important;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .portfoliocontainer {
+        width: 100%;
+        height: 100%;
+        margin: 0px auto;
+    }
+    .divider {
+        margin: 20px auto;
+        width: 80%;
+        clear: both;
+        border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 1px -1px 3px rgba(0, 0, 0, 0.5);
+    }
+    .row.reorder-xs {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+        direction: rtl;
+    }
+    .row.reorder-xs>[class*="col-"] {
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+        direction: ltr;
+    }
+    .reorder .row {
+        display: flex;
+        display: -ms-flex;
+        flex-direction: column;
+    }
+    .reorder .row .item1 {
+        order: 2;
+    }
+    .reorder .row .item2 {
+        order: 1;
+    }
+    .reorder .row .item3 {
+        order: 3;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .main {
+        height: 850px;
+    }
+    .profiletext {
+        padding: 30px 30px !important;
+    }
+    .title {
+        font-size: 4em;
+    }
+    .findmeon {
+        padding-top: 0px !important;
+    }
+    blockquote {
+        font-size: 16px !important;
+        margin: 20px 40px 40px 30px !important;
+    }
+    form#contact {
+        margin: 20px 40px 40px 30px !important;
+    }
+    .space {
+        margin-top: 0px !important;
+    }
+    .bcgcolor {
+        background-color: rgba(0, 0, 0, 0.77) !important;
+    }
+    .mypic {
+        width: 60% !important;
+    }
+    .sectionTitle {
+        font-size: 2em !important;
+    }
+    .undertitle {
+        font-size: 1.7em !important;
+    }
+    .imagepos {
+        padding-top: 30px !important;
+    }
+    .portfoliopic {
+        width: 50% !important;
+    }
+    h2 {
+        padding: 0px 30px;
+    }
+    h3 a {
+        font-size: 1em !important;
+    }
+}
+
+@media screen and (min-width:520px) and (max-width:768px) {
+    .timeline>li>.timeline-item>.timeline-header {
+        font-size: 16px !important;
+        line-height: 1.1 !important;
+    }
+    .timeline>li>.timeline-item>.timeline-body,
+    .timeline>li>.timeline-item>.timeline-footer {
+        /*Font*/
+        font-size: 14px !important;
+        line-height: 1.1 !important;
+        padding: 7px;
+    }
+    .main {
+        height: 900px !important;
+    }
+    .badgescard span {
+        font-size: 1.5em !important;
+    }
+    .badgescard {
+        width: 70% !important;
+    }
+    .title {
+        font-size: 3.5em;
+    }
+    .titleborder {
+        border: white solid 7px;
+    }
+    .profiletext {
+        padding: 10px 10px !important;
+    }
+    h2 {
+        font-size: 1em;
+        padding-top: 40px;
+        text-align: center;
+        color: white !important;
+        text-shadow: 0.08em -0.08em 0.12em black;
+    }
+    .findmeon {
+        padding-top: 0px !important;
+    }
+    .space {
+        margin-top: 0px !important;
+    }
+    .mypic {
+        width: 70% !important;
+    }
+    .imagepos {
+        padding-top: 20px !important;
+    }
+    .portfoliopic {
+        width: 60% !important;
+    }
+    .bcgcolor {
+        background-color: rgba(0, 0, 0, 0.77) !important;
+    }
+    blockquote {
+        margin: 20px 30px 30px 30px !important;
+    }
+    form#contact {
+        margin: 20px 20px 30px 20px !important;
+    }
+    li a {
+        font-size: 1.15em;
+    }
+    li a:hover {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .aboutmetexttitle {
+        display: none !important;
+    }
+    #top-link-block.affix {
+        bottom: 6px !important;
+        right: 4px !important;
+    }
+    .timeline {
+        margin: 5px 10px 35px 10px !important;
+    }
+    .timeline>li>.timeline-item>.timeline-header {
+        font-size: 13px !important;
+        line-height: 1.1 !important;
+    }
+    .timeline>li>.timeline-item>.timeline-body,
+    .timeline>li>.timeline-item>.timeline-footer {
+        /*Font*/
+        font-size: 12px !important;
+        line-height: 1.1 !important;
+        text-align: justify;
+        padding: 2px;
+    }
+    p {
+        font-size: 1em;
+    }
+    .logo {
+        color: orangered;
+        opacity: 0.9;
+        font-size: 2em;
+        margin: 0px 10px;
+    }
+    .badgescard span {
+        font-size: 1.2em !important;
+    }
+    .badgescard {
+        width: 80% !important;
+        padding: 8px 0px 5px 0px !important;
+    }
+    .emailBig {
+        font-size: 1.5em !important;
+    }
+    .portfoliopic {
+        padding-top: 0px !important;
+        width: 100% !important;
+    }
+    .main {
+        height: 450px !important;
+    }
+    h2 {
+        padding: 20px 20px 0px 20px !important;
+    }
+    .undertitle {
+        font-size: 1.1em !important;
+    }
+    .title {
+        font-size: 2em !important;
+        padding-top: 130px !important;
+    }
+    .titleborder {
+        border: white solid 4px;
+    }
+    .sectionTitle {
+        font-size: 1.3em !important;
+        padding-top: 5px !important;
+    }
+    blockquote {
+        padding: 8px 12px 8px 15px !important;
+        font-size: 12px !important;
+        margin: 15px 15px 25px 15px !important;
+        font-family: Georgia, serif !important;
+    }
+    .blockquotepadding {
+        padding-top: 10px !important;
+    }
+    .imagepos {
+        padding-top: 10px !important;
+    }
+    .mypic {
+        display: block;
+        width: 80% !important;
+        margin: 0 auto;
+    }
+    .findmeon {
+        padding-top: 0px !important;
+    }
+    .space {
+        margin-top: 0px !important;
+    }
+    .bcgcolor {
+        background-color: rgba(0, 0, 0, 0.7) !important;
+    }
+    .profiletext {
+        padding: 0px 0px !important;
+    }
+    nav ul {
+        width: 100%;
+    }
+    nav ul li {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.6);
+    }
+    nav ul li a {
+        display: block;
+        width: 100%;
+        font-size: 1.1em;
+        text-align: center;
+        border-bottom: 2px solid #A9A9F5;
+    }
+    nav ul li a:hover {
+        font-size: 1.1em;
+    }
+    a:focus {
+        text-decoration: none !important;
+        color: white !important;
+    }
+    nav {
+        position: absolute;
+        margin-top: 40px;
+        width: 100%;
+        padding: 0px;
+        z-index: 1;
+    }
+    .social {
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+    }
+    .findmeon {
+        font-size: 1.1em;
+    }
+    .social .link {
+        width: 70px !important;
+        height: 70px !important;
+        font-size: 35px !important;
+    }
+    .navclass {
+        display: none;
+    }
+    .menu-trigger {
+        display: block;
+        height: 40px;
+        background: rgba(0, 0, 0, 0.65);
+        text-align: right;
+        float: right;
+        padding: 10px 10px;
+        font-size: 1.3em;
+        color: white;
+        cursor: pointer;
+    }
+    form#contact {
+        margin: 0px 10px 10px 10px !important;
+    }
+    .well-custom {
+        font-size: 0.9em !important;
+    }
+    .padding {
+        margin-top: 20px;
+    }
+    footer {
+        font-size: 12px !important;
+    }
+    h3 a {
+        font-size: 0.8em !important;
+    }
+    h3.aboutmetexttitle {
+        font-size: 1.2em !important;
+        text-align: left !important;
+    }
+    .btn2 {
+        line-height: 25px !important;
+        margin-top: 10px !important;
+        ;
+        padding: 0 12px !important;
+        ;
+        font-size: 12px !important;
+        ;
+    }
+}
+
+h2 {
+    font-size: 2em;
+    padding-top: 40px;
+    text-align: center;
+    color: white !important;
+    text-shadow: 0.08em -0.08em 0.12em black;
+}
+
+h3 a {
+    font-size: 1.1em;
+    margin-top: 40px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85) !important;
+    text-shadow: 0.08em -0.08em 0.12em black;
+}
+
+h3 a:hover {
+    color: white !important;
+    text-decoration: none;
+}
+
+.aboutme {
+    margin-top: 80px;
+    height: auto;
+    background-image: url(https://wallpaperscraft.com/image/matrix_numbers_code_background_47399_3840x2400.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overflowclass {
+    clear: both;
+    display: table;
+}
+
+.sectionTitle {
+    padding-top: 20px;
+    font-size: 2.4em;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.1em;
+    text-align: center;
+    clear: both;
+    text-shadow: 0.1em -0.1em 0.1em black;
+}
+
+.bcgcolor {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio {
+    margin-top: 80px;
+    height: auto;
+    background-image: url(https://keshavcdas.files.wordpress.com/2015/05/development-paradox.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contactme {
+    margin-top: 80px;
+    height: 880px;
+    background-image: url(http://meltononthemove.com.au/wp-content/uploads/2012/04/mailbox.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#top-link-block.affix-top {
+    position: absolute;
+    /* allows it to "slide" up into view */
+    bottom: -82px;
+    right: 10px;
+}
+
+#top-link-block.affix {
+    position: fixed;
+    /* keeps it on the bottom once in view */
+    bottom: 12px;
+    right: 8px;
+}
+
+.well-custom {
+    float: right;
+    margin-right: 20px;
+    background-color: black !important;
+    border-color: orange !important;
+    color: orange !important;
+    font-size: 1.1em;
+}
+
+.mypic {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 10px double white;
+    box-shadow: 0.2em -0.2em 0.8em black;
+}
+
+.profiletext {
+    padding: 80px 60px;
+}
+
+.imagepos {
+    padding-top: 40px;
+}
+
+.blockquotepadding {
+    padding-top: 40px;
+}
+
+.padding {
+    margin-top: 20px;
+}
+
+.portfolioPicDiv {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.portfoliopic {
+    display: block;
+    vertical-align: middle;
+    padding: 40px 40px;
+    margin: 0 auto;
+    vertical-align: middle;
+    border-radius: 2%;
+    transition: all .4s ease-in-out;
+}
+
+.portfoliopicright {
+    padding: 0px 40px 0px 40px;
+}
+
+.portfoliopic:hover {
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+    animation-name: portpichoveranim;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards;
+}
+
+.portfoliopicright:hover {
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+    animation-name: portpichoveranimright;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards;
+}
+
+@media screen and (min-width:1000px) {
+    /* The animation code */
+    @keyframes portpichoveranim {
+        0% {
+            left: 0%;
+            margin: 0px 0px;
+            -ms-transform: scale(1);
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+        100% {
+            left: 50%;
+            -ms-transform: scale(2.2);
+            -webkit-transform: scale(2.2);
+            transform: scale(2.2);
+        }
+    }
+    @keyframes portpichoveranimright {
+        0% {
+            right: 0%;
+            margin: 0px 0px;
+            -ms-transform: scale(1);
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+        100% {
+            right: 50%;
+            -ms-transform: scale(2.2);
+            -webkit-transform: scale(2.2);
+            transform: scale(2.2);
+        }
+    }
+}
+
+@media screen and (min-width:520px) and (max-width:1000px) {
+    .portfoliopic:hover {
+        position: relative;
+        cursor: pointer;
+        z-index: 1;
+        -webkit-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        -ms-transform: scale(2);
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        overflow: hidden;
+    }
+}
+
+.projecttext {
+    text-align: justify;
+    color: white;
+}
+
+blockquote {
+    display: block;
+    padding: 15px 15px 15px 30px;
+    margin: 0px 60px 30px 60px;
+    position: relative;
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #666;
+    text-align: justify;
+    /*Borders - (Optional)*/
+    border-left: 15px solid #c76c0c;
+    border-right: 2px solid #c76c0c;
+    /*Box Shadow - (Optional)*/
+    -moz-box-shadow: 2px 2px 15px black;
+    -webkit-box-shadow: 2px 2px 15px black;
+    box-shadow: 2px 2px 15px black;
+    /* Animations */
+    animation-name: blockquoteanimation;
+    animation-duration: 1.2s;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards;
+}
+
+blockquote::before {}
+
+blockquote::after {
+    /*Reset to make sure*/
+    content: "";
+}
+
+blockquote a {
+    text-decoration: none;
+    background: #eee;
+    cursor: pointer;
+    padding: 0 3px;
+    color: #c76c0c;
+}
+
+blockquote a:hover {
+    color: #666;
+}
+
+blockquote em {
+    font-style: italic;
+}
+
+h3 {
+    color: white !important;
+    text-align: center;
+}
+
+.space {
+    margin-top: 80px;
+}
+
+form#contact {
+    padding: 5%;
+    outline: 6px solid rgba(34, 34, 34, 0.08);
+    /*Borders - (Optional)*/
+    border-left: 15px solid #c76c0c;
+    border-right: 2px solid #c76c0c;
+    margin: 0px 20px 0px 0px;
+    /*Box Shadow - (Optional)*/
+    -moz-box-shadow: 2px 2px 15px black;
+    -webkit-box-shadow: 2px 2px 15px black;
+    box-shadow: 2px 2px 15px black;
+}
+
+#tf-contact input.form-control {
+    height: 40px;
+}
+
+#tf-contact .form-control {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 16px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #FFF;
+    background-image: none;
+    border: 1px solid #FFF;
+    border-radius: 0;
+    border-top: 2px solid transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: all 0.8s;
+}
+
+#tf-contact .form-control:focus,
+#tf-contact .form-control:hover {
+    border-top: 2px solid #2F937B;
+}
+
+button.btn,
+a.btn {
+    margin: 15px 5px;
+    transition: all 0.5s;
+}
+
+button.btn.btn-primary.my-btn,
+a.btn.btn-primary.my-btn {
+    background: #2F937B;
+    border-color: transparent;
+    border-radius: 0px;
+    border-width: 2px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+button.btn.btn-primary.my-btn:hover,
+a.btn.btn-primary.my-btn:hover {
+    background: #FFFFFF;
+    color: #2F937B;
+    border-color: transparent;
+}
+
+button.btn.btn-primary.my-btn.dark:hover,
+a.btn.btn-primary.my-btn.dark:hover {
+    background: #222222;
+    color: #ffffff;
+    border-color: transparent;
+}
+
+.hiddenelement {
+    visibility: hidden;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.social {
+    width: 100%;
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.social .link {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 2px dashed white;
+    background-clip: content-box;
+    padding: 10px;
+    transition: .5s;
+    color: #D7D0BE;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.2);
+    font-size: 70px;
+}
+
+.social .link span {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social .link:hover {
+    padding: 20px;
+    color: white;
+    margin-left: -5px;
+    transform: translateX(10px) rotate(360deg);
+}
+
+.social .link.google-plus {
+    background-color: tomato;
+    color: white;
+}
+
+.social .link.linkedin {
+    background-color: #0077B5;
+    color: white;
+}
+
+.social .link.facebook {
+    background-color: #3B5998;
+    color: white;
+}
+
+.findmeon {
+    padding-top: 100px;
+    text-align: center;
+}
+
+footer {
+    height: 40px;
+    background-color: black;
+    color: white;
+    padding: 10px !important;
+    border-top: 2px solid white;
+    font-size: 16px;
+}
+
+footer a {
+    cursor: pointer;
+}
+
+.flat-butt {
+    margin: 0 5px;
+    border-radius: 6px;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    padding: 8px 16px;
+    border: 0;
+    background: #34495E;
+    color: #FFF;
+    cursor: pointer;
+    outline: 0;
+    position: relative;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 40%)
+}
+
+.flat-butt:hover {
+    background: #005580;
+}
+
+.btn2 {
+    display: inline-block;
+    line-height: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    font-size: 15px;
+    position: relative;
+    opacity: 1;
+    border-radius: 3px;
+}
+
+.btn2-border-o {
+    background-color: transparent;
+    border: 1px solid #d0d0d0;
+    color: #B8B8B8;
+}
+
+.btn2-border-o:before,
+.btn2-border-o:after {
+    content: '';
+    border-style: solid;
+    position: absolute;
+    z-index: 5;
+    border-radius: 3px;
+    box-sizing: content-box;
+}
+
+.btn2-border-o:before {
+    width: 0;
+    height: 100%;
+    border-width: 1px 0 1px 0;
+    top: -1px;
+    left: 0;
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+
+.btn2-border-o:after {
+    width: 100%;
+    height: 0;
+    border-width: 0 1px 0 1px;
+    top: 0;
+    left: -1px;
+}
+
+.btn2-border-o:hover:before {
+    width: 100%;
+}
+
+.btn2-border-o:hover:after {
+    height: 100%;
+}
+
+.btn2-border-o.btn2-blue:before,
+.btn2-border-o.btn2-blue:after {
+    border-color: #3498db;
+}
+
+.btn2-border-o.btn2-blue:hover {
+    color: #3498db;
+}
+
+.emailBig {
+    margin-bottom: 50px;
+}
+
+.emailBig a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0.2em -0.2em 0.3em black;
+}
+
+.emailBig a:hover {
+    color: white;
+}
+
+.experience {
+    margin-top: 80px;
+    height: auto;
+    background-image: url(http://killingthebreeze.com/wp-content/uploads/2015/10/Men-at-Work.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.badgescard {
+    visibility: hidden;
+    text-align: center;
+    display: block;
+    padding: 20px 20px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 500px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    left: 10px;
+    bottom: 10px;
+    margin: auto;
+    animation-name: badgescardanimation;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards;
+}
+
+.badgescard span {
+    color: white;
+    font-size: 2.5em;
+    margin: 0px 6px;
+    opacity: 0.9;
+}
+
+
+/* The animation code */
+
+@keyframes badgescardanimation {
+    0% {
+        visibility: visible;
+        opacity: 0.1;
+        transform: scale(0.1);
+    }
+    100% {
+        visibility: visible;
+        opacity: 0.9;
+        transform: scale(1);
+    }
+}
+
+
+/*
+ * Component: Timeline
+ * -------------------
+ */
+
+.timeline {
+    position: relative;
+    margin: 30px 50px 30px 50px;
+    padding: 0px;
+    list-style: none;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #ddd;
+    left: 31px;
+    margin: 0;
+    border-radius: 2px;
+}
+
+.timeline>li>div {
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.timeline>li>div:before,
+.timeline>li>div:after {
+    content: " ";
+    display: table;
+}
+
+.timeline>li>div:after {
+    clear: both;
+}
+
+.timeline-item {
+    border-radius: 3px;
+    margin-top: 0;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    margin-left: 60px;
+    margin-right: 15px;
+    padding: 0;
+    position: relative;
+    /*Box Shadow - (Optional)*/
+    -moz-box-shadow: 2px -2px 10px black;
+    -webkit-box-shadow: 2px -2px 10px black;
+    box-shadow: 2px -2px 10px black;
+}
+
+.timeline-item>.time {
+    color: #999;
+    float: right;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.timeline-item>.timeline-header {
+    margin: 0;
+    color: #555;
+    border-bottom: 1px solid #f4f4f4;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.timeline-item>.timeline-header>a {
+    font-weight: 600;
+}
+
+.timeline-item>.timeline-body,
+.timeline-item>.timeline-footer {
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.2;
+    color: white;
+    padding: 10px;
+}
+
+.timeline>li>div>.fa,
+.timeline>li>div>.glyphicon,
+.timeline>li>div>.ion {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    position: absolute;
+    color: #666;
+    background: #d2d6de;
+    border-radius: 50%;
+    text-align: center;
+    left: 18px;
+    top: 0;
+}
+
+.time-label>span {
+    font-weight: 600;
+    padding: 5px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.timeline-inverse>li>div>.timeline-item {
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.timeline-inverse>li>div>.timeline-item>.timeline-header {
+    border-bottom-color: #ddd;
+}
+
+.bg-blue {
+    background: blue !important;
+    color: white !important;
+}
+
+.bg-red {
+    background: red !important;
+    color: white !important;
+}

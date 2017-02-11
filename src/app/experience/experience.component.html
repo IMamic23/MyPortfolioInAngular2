@@ -1,0 +1,45 @@
+<!--EXPERIENCE SECTION-->
+<div class="experience">
+    <div class="bcgcolor">
+        <div id="container2" class="overflowclass portfoliocontainer">
+            <h1 id="experience" class="sectionTitle">Experience</h1>
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-xs-12">
+                    <!-- The time line -->
+                    <ul class="timeline">
+                        <!-- timeline time label -->
+                        <li *ngFor="let data of myData.experience">
+                            <div class="time-label">
+                                <span class="" style="width:150px">
+                            {{data.date}}
+                                </span>
+                            </div>
+                            <!-- /.timeline-label -->
+                            <!-- timeline item -->
+                            <div>
+                                <i class="fa fa-briefcase"></i>
+                                <div class="timeline-item">
+                                    <h3 class="timeline-header">{{data.workingposition}}</h3>
+                                    <div class="timeline-body">
+                                        <ol style="list-style-type: circle;" innerHTML="{{data.description}}">
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END timeline item -->
+                        </li> 
+                        <li>
+                            <div>
+                                <i class="fa fa-clock-o bg-gray"></i>
+                        </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- col -->
+            </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+    </div>
+</div>
+<!--END OF EXPERIENCE SECTION-->
